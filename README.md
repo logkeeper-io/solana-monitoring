@@ -15,3 +15,8 @@ solana --version
 ```agsl
 apt install jq bc
 ```
+## Install telegraf
+```
+https://docs.influxdata.com/telegraf/v1/install/
+```
+
