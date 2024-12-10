@@ -9,3 +9,9 @@ solana --version
 
 ## For other platform please follow official solana cli documentation.
 *https://docs.anza.xyz/cli/install/*
+
+
+# Script prerequisites
+```agsl
+apt install jq bc
+```
