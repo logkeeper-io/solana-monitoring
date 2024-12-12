@@ -12,10 +12,10 @@
 |------------------|--------------------|-------------------------------------------------|
 | **solana**       | 2.1.5              | Lower versions not supported                    |
 | **bc**           | all                |                                                 |
-| **jq**           | all                | Test with v4.x, should work with newer versions |
-| **dialog**       | 1.3+               | Test with latest stable release                 |
-| **gettext-base** | 0.21               | Use with PostgreSQL 12 or later                 |
-| **sudo**         | all                | Use with PostgreSQL 12 or later                 |
+| **jq**           | all                |  |
+| **dialog**       | 1.3+               |                 |
+| **gettext-base** | 0.21               |                  |
+| **sudo**         | all                |                |
 
 
 ## Known Incompatibilities
