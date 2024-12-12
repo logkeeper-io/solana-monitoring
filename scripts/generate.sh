@@ -138,6 +138,7 @@ case $return_value in
     cat templates/monitorTemplateHead.tpl | envsubst > head.sh
     cat head.sh > monitor.sh
     cat templates/monitorTemplateBody.tpl >> monitor.sh
+    chmod +x monitor.sh
     cat templates/telegraf-conf.tpl | envsubst > telegraf.conf
     rm head.sh
     mv telegraf.conf /etc/telegraf/telegraf.conf
