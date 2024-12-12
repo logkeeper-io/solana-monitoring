@@ -2,9 +2,9 @@
 
 ## Supported Platforms
 
-| Platform          | Supported Versions      | Notes                           |
-|-------------------|-------------------------|---------------------------------|
-| **Operating System** | Linux Ubuntu            | Ensure required dependencies are installed for each OS |
+| Platform          | Supported Versions      | Notes                                                                                                                                                                            |
+|-------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Operating System** | Linux Ubuntu            | generate.sh script will not work on other Linux distributions. But monitor.sh script itself will work togher with telegraf. (but you have to create it manually from templates.) |
 
 ## Dependencies
 
