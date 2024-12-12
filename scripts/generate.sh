@@ -22,7 +22,6 @@ RESET='\033[0m'
 
 clean () {
   rm -rf form.txt
-  rm -rf monitor.sh
 }
 
 checkDistr() {
