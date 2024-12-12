@@ -190,6 +190,6 @@ echo -e "  Telegraf logs"
 echo -e "======================================================"
 echo -e "${CYAN}/var/log/telegraf/telegraf.log${RESET}"
 echo -e "\n"
-#clean
+clean
 
 
