@@ -1,4 +1,4 @@
-# Install solana cli (MacOs)
+# Install solana cli
 ```agsl
 sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.5/install)"
 ```
