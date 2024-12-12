@@ -7,7 +7,7 @@ RUN mkdir -p /root/solana/solana-monitoring/scripts
 WORKDIR /root/solana/solana-monitoring/scripts
 
 RUN apt-get update && \
-    apt-get install -y vim curl iputils-ping wget jq bc gpg sudo&& \
+    apt-get install -y vim curl iputils-ping wget jq bc gpg sudo dialog gettext-base&& \
     apt-get clean
 
 RUN sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.5/install)"

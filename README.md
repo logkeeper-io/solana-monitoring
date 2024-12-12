@@ -13,7 +13,7 @@ solana --version
 
 # Script prerequisites
 ```agsl
-apt install jq bc
+apt install jq bc dialog gettext-base
 ```
 ## Install telegraf
 ```
