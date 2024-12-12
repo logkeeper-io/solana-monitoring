@@ -1,4 +1,29 @@
-# Install solana cli
+# Compatibility
+
+## Supported Platforms
+
+| Platform          | Supported Versions      | Notes                                                                                                                                                                            |
+|-------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Operating System** | Linux Ubuntu            | generate.sh script will not work on other Linux distributions. But monitor.sh script itself will work togher with telegraf. (but you have to create it manually from templates.) |
+
+## Dependencies
+
+| Dependency       | Supported Versions | Notes                                           |
+|------------------|--------------------|-------------------------------------------------|
+| **solana**       | 2.1.5              | Lower versions not supported                    |
+| **bc**           | all                |                                                 |
+| **jq**           | all                |  |
+| **dialog**       | 1.3+               |                 |
+| **gettext-base** | 0.21               |                  |
+| **sudo**         | all                |                |
+
+
+## Known Incompatibilities
+
+- **Older Solana cli Versions**: solana cli versions before 2.1.5 are not supported.
+
+# Installation
+## Install solana cli
 ```agsl
 sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.5/install)"
 ```
