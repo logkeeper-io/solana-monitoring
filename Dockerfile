@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN mkdir -p /root/solana/solana-monitoring/scripts
+RUN mkdir -p /root/solana/solana-monitoring/scripts/templates
 
 WORKDIR /root/solana/solana-monitoring/scripts
 
@@ -29,5 +29,6 @@ RUN curl --silent --location -O \
 RUN apt-get update && \
     apt-get install -y telegraf
 
-COPY scripts/monitor.sh /root/solana/solana-monitoring/scripts/monitor.sh
-COPY etc/telegraf.conf /etc/telegraf/telegraf.conf
+COPY scripts/generate.sh /root/solana/solana-monitoring/scripts/generate.sh
+COPY scripts/templates/monitorTemplateBody.tpl /root/solana/solana-monitoring/scripts/templates/monitorTemplateBody.tpl
+COPY scripts/templates/monitorTemplateHead.tpl /root/solana/solana-monitoring/scripts/templates/monitorTemplateHead.tpl
