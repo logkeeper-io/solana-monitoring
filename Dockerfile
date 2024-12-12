@@ -14,8 +14,6 @@ RUN sh -c "$(curl -sSfL https://release.anza.xyz/v2.1.5/install)"
 
 ENV PATH="$PATH:/root/.local/share/solana/install/active_release/bin/"
 
-
-
 # Telegraf
 RUN curl --silent --location -O \
     https://repos.influxdata.com/influxdata-archive.key \
