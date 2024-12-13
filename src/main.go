@@ -11,8 +11,8 @@ import (
 	"net/http"
 )
 
-const validatorPublicKey = "98TFLBJMBuZbz9U5jeK57UwURx3MWXGEfCuVVKLV7FEi"
-const validatorVoteKey = "8AWEckNoepThFnsSvnyaGMi84w5ssR8iuSt94t2FtHdx"
+const validatorPublicKey = "xxx"
+const validatorVoteKey = "xxxx"
 
 type AccountDetails struct {
 	VotePublicKey    string
