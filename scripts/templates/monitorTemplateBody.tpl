@@ -45,6 +45,9 @@ if [ $(grep -c $voteAccount <<< $validatorCheck) == 0  ]; then echo "validator n
               credits=$(jq -r '.credits' <<<$delinquentValidatorInfo)
               version=$(jq -r '.version' <<<$delinquentValidatorInfo | sed 's/ /-/g')
               version2=${version//./}
+              if [[ "x${version}" == "xunknown" ]];then
+                      version2=$solanaVersion
+              fi
               commission=$(jq -r '.commission' <<<$delinquentValidatorInfo)
               logentry="rootSlot=$(jq -r '.rootSlot' <<<$delinquentValidatorInfo),lastVote=$(jq -r '.lastVote' <<<$delinquentValidatorInfo),credits=$credits,activatedStake=$activatedStake,version=$version2,commission=$commission"
         elif [ -n "$currentValidatorInfo" ]; then
@@ -53,6 +56,9 @@ if [ $(grep -c $voteAccount <<< $validatorCheck) == 0  ]; then echo "validator n
               credits=$(jq -r '.credits' <<<$currentValidatorInfo)
               version=$(jq -r '.version' <<<$currentValidatorInfo | sed 's/ /-/g')
               version2=${version//./}
+              if [[ "x${version}" == "xunknown" ]];then
+                      version2=$solanaVersion
+              fi
               commission=$(jq -r '.commission' <<<$currentValidatorInfo)
               logentry="rootSlot=$(jq -r '.rootSlot' <<<$currentValidatorInfo),lastVote=$(jq -r '.lastVote' <<<$currentValidatorInfo)"
               leaderSlots=$(jq -r '.leaderSlots' <<<$validatorBlockProduction)
