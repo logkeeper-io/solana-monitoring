@@ -19,4 +19,6 @@ rpcURL="${rpcUrl}"              # default is localhost with port number autodisc
 format="SOL"           # amounts shown in 'SOL' instead of lamports
 now=$(date +%s%N)      # date in influx format
 timezone="UTC"            # time zone for epoch ends metric
+versionFromCli=$(${solanaBinDir}/solana --version|awk '{print $2}')
+solanaVersion=${versionFromCli//./} # Pin the installed version in case if rpc respond with unknown version
 #####  END CONFIG  ##################################################################################################
