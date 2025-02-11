@@ -11,6 +11,7 @@
 | Dependency       | Supported Versions | Notes                                           |
 |------------------|--------------------|-------------------------------------------------|
 | **solana**       | 2.1.5, 2.1.6, 2.1.7, 2.1.8, 2.1.9, 2.0.22       | Lower versions not supported                    |
+| **firedancer**   | 0.305.20111 | |
 | **bc**           | all                |                                                 |
 | **jq**           | all                |  |
 | **dialog**       | 1.3+               |                 |
