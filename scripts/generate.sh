@@ -27,8 +27,11 @@ clean () {
 checkDistr() {
   distrName=$(grep -i ubuntu /etc/os-release)
   if [ -z "${distrName}" ]; then
-    echo -e "${DARK_RED}Distributive is not supported. Only works in Ubuntu.${RESET}"
-    exit 1
+    debian=$(grep -i debian /etc/os-release)
+    if [ -z "${debian}" ]; then
+    	echo -e "${DARK_RED}Distributive is not supported. Only works in Ubuntu.${RESET}"
+    	exit 1
+    fi
   fi
 }
 
